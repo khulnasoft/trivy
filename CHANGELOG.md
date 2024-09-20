@@ -1,5 +1,35 @@
 # Changelog
 
+## [0.56.0](https://github.com/aquasecurity/trivy/compare/v0.55.0...v0.56.0) (2024-09-20)
+
+
+### Features
+
+* **license:** improve license normalization ([#7131](https://github.com/aquasecurity/trivy/issues/7131)) ([6472e3c](https://github.com/aquasecurity/trivy/commit/6472e3c9da2a8e7ba41598a45c80df8f18e57d4c))
+* **misconf:** Register checks only when needed ([#7435](https://github.com/aquasecurity/trivy/issues/7435)) ([f768d3a](https://github.com/aquasecurity/trivy/commit/f768d3a767a99a86b0372f19d9f49a2de35dbe59))
+
+
+### Bug Fixes
+
+* **java:** use `dependencyManagement` from root/child pom's for dependencies from parents ([#7497](https://github.com/aquasecurity/trivy/issues/7497)) ([5442949](https://github.com/aquasecurity/trivy/commit/54429497e7d6a87eac236771d4efb8a5a7faaac5))
+* **license:** stop spliting a long license text ([#7336](https://github.com/aquasecurity/trivy/issues/7336)) ([4926da7](https://github.com/aquasecurity/trivy/commit/4926da79de901fba73819d71845ec0355b68ae0f))
+* **misconf:** Fix logging typo ([#7473](https://github.com/aquasecurity/trivy/issues/7473)) ([56db43c](https://github.com/aquasecurity/trivy/commit/56db43c24f4f6be92891be85faaf9492cad516ac))
+* **oracle:** Update EOL date for Oracle 7 ([#7480](https://github.com/aquasecurity/trivy/issues/7480)) ([dd0a64a](https://github.com/aquasecurity/trivy/commit/dd0a64a1cf0cd76e6f81e3ff55fa6ccb95ce3c3d))
+* **report:** change a receiver of MarshalJSON ([#7483](https://github.com/aquasecurity/trivy/issues/7483)) ([927c6e0](https://github.com/aquasecurity/trivy/commit/927c6e0c9d4d4a3f1be00f0f661c1d18325d9440))
+* **report:** fix error with unmarshal of `ExperimentalModifiedFindings` ([#7463](https://github.com/aquasecurity/trivy/issues/7463)) ([7ff9aff](https://github.com/aquasecurity/trivy/commit/7ff9aff2739b2eee4a98175b98914795e4077060))
+* **sbom:** export bom-ref when converting a package to a component ([#7340](https://github.com/aquasecurity/trivy/issues/7340)) ([5dd94eb](https://github.com/aquasecurity/trivy/commit/5dd94ebc1ffe3f1df511dee6381f92a5daefadf2))
+* **sbom:** parse type `framework` as `library` when unmarshalling `CycloneDX` files ([#7527](https://github.com/aquasecurity/trivy/issues/7527)) ([aeb7039](https://github.com/aquasecurity/trivy/commit/aeb7039d7ce090e243d29f0bf16c9e4e24252a01))
+
+
+### Performance Improvements
+
+* **misconf:** use port ranges instead of enumeration ([#7549](https://github.com/aquasecurity/trivy/issues/7549)) ([1f9fc13](https://github.com/aquasecurity/trivy/commit/1f9fc13da4a1e7c76c978e4f8e119bfd61a0480e))
+
+
+### Reverts
+
+* **java:** stop supporting of `test` scope for `pom.xml` files ([#7488](https://github.com/aquasecurity/trivy/issues/7488)) ([b0222fe](https://github.com/aquasecurity/trivy/commit/b0222feeb586ec59904bb321fda8f3f22496d07b))
+
 ## [0.55.0](https://github.com/aquasecurity/trivy/compare/v0.54.0...v0.55.0) (2024-09-03)
 
 
